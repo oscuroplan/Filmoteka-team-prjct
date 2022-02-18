@@ -1,0 +1,92 @@
+.registration-form__wraper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: $footer-background-color;
+}
+.registration-form {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 280px;
+  height: 380px;
+  margin: auto;
+  padding-top: 20px;
+  color: $secondary-text-color;
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+}
+.registration-form-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    color: $lighter-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.registration-form__input {
+  width: 280px;
+  height: 30px;
+  outline: transparent;
+  border: 1px solid $accent-color;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.registration-form__offer-registration {
+  margin: 0 auto;
+  font-size: 16px;
+  height: 40px;
+}
+.registration-form__btn {
+  display: flex;
+  justify-content: center;
+  border: 2px solid $transparent;
+  border-radius: 3px;
+  width: 180px;
+  margin: 0 auto;
+  color: $lighter-text-color;
+  background-color: $accent-color;
+  font-size: 16px;
+  line-height: 1.57;
+  cursor: pointer;
+  height: 30px;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-background-color;
+    border: 2px solid $secondary-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration-form__wraper {
+    width: 400px;
+  }
+}
